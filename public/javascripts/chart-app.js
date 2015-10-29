@@ -9,7 +9,7 @@ app.controller('MainController', ['$scope', '$http',  function($scope, $http) {
   var table = google.visualization.arrayToDataTable(dataArray, false);
   var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
   
-  var options = {'title':'Company Sales'}
+  var options = {'title':'Top Dessert Spots'}
   chart.draw(table, options);
 
   });
